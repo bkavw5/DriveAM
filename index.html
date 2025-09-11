@@ -122,7 +122,7 @@ const i18n = {
     confirmClear: "Xác nhận xóa tất cả tài khoản khỏi localStorage?",
     confirmDelete: "Xóa {email} khỏi danh sách?",
     noAccounts: "Không có account nào",
-    confirmRefreshAll: "Thử làm mới token cho tất cả tài khoản (im lặng). Nếu không thành công, sẽ yêu cầu login từng account). Tiếp tục?",
+    confirmRefreshAll: "Thử làm mới token cho tất cả tài khoản (🔁). Nếu không thành công, sẽ yêu cầu login từng account). Tiếp tục?",
     tokenMissing: "Token chưa có hoặc hết hạn, cần Login để lấy token (button Login)",
     tokenAvailable: "Token đã có. Cập nhật lần cuối: {time}",
     alertExport: "Đã xuất JSON (không chứa token). Khi import, bạn cần re-login cho từng tài khoản.",
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 /* === Cấu hình API ===
-   Thay CLIENT_ID / API_KEY nếu bạn dùng app riêng */
+   Thay CLIENT_ID / API_KEY nếu bạn dùng riêng */
 const CLIENT_ID = "38167051736-41cccg5vha31a26m2r01qrc3orq16q0l.apps.googleusercontent.com";
 const API_KEY   = "AIzaSyA5qxkINvYg421h2jGmxN84L8RWYCBeCwU";
 const SCOPES    = "https://www.googleapis.com/auth/drive.metadata.readonly https://www.googleapis.com/auth/drive.readonly openid email profile";
@@ -697,5 +697,6 @@ window.addEventListener("load", async () => {
 </script>
 </body>
 </html>
+
 
 
